@@ -10,6 +10,7 @@ class Db():
 
     def __del__(self):
         self.__cursor.close()
+        print('SQLite3')
 
     def commit(self):
         self.__connection.commit()
